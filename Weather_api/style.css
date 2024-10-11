@@ -1,0 +1,206 @@
+
+/* Default */
+html, body, div, img, input, p, button, i {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Body styling */
+body {
+    min-height: 100vh; /* Minimum height to fill viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #06283D; /* Background color */
+}
+
+/* Container styling  */
+.Container {
+    position: relative;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 28px;
+    border-radius: 18px;
+    font-family: 'Roboto', sans-serif;
+    transition: transform 0.6s ease-out; /* Transition for smoothness */
+    overflow: hidden;
+}
+
+/* Search box layout */
+.Search-Box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Input field for search */
+.Search-Box input {
+    flex: 1; /* Occupies available space */
+    color: #06283D;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase; /* All uppercase letters */
+    padding: 0 0 0 32px; /* Padding on the left */
+    background-color: transparent;
+    border: none; 
+}
+
+/* Placeholder styling */
+.Search-Box input::placeholder {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #06283D;
+    text-transform: capitalize; /* Capitalize placeholder text */
+}
+
+/* Search button styling */
+.Search-Box button {
+    width: 50px;
+    height: 50px;
+    background-color: #dff6ff; 
+    color: #06283D;
+    border-radius: 50%; 
+    cursor: pointer;
+    transition: background-color 0.4s ease; /* Smooth hover effect */
+}
+
+
+
+/* Button hover effect */
+.Search-Box button:hover {
+    background-color: #06283D;
+    color: #fff; /* Text color becomes white with hover */
+}
+
+/* Icon for search */
+.Search-Box i {
+    position: absolute;
+    font-size: 28px;
+    color: #06283D;
+    
+}
+
+/* Invalid location box */
+.Item-Not-Found {
+    display: none; /* Hidden by default */
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transform: scale(0);
+    margin-top: 50px;
+}
+
+/* Image inside the invalid location container */
+.Item-Not-Found img {
+    max-width: 70%;
+}
+
+/* Text for invalid location */
+.Item-Not-Found p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #06283D;
+    margin-top: 12px;
+}
+
+/* Weather box styling */
+.Wather-Box {
+    text-align: center;
+}
+
+/* Weather image */
+.Wather-Box img {
+    width: 60%;
+    margin-top: 30px;
+}
+
+/* Temperature styling */
+.Wather-Box .Temperature {
+    font-size: 4rem; /* Large font size */
+    font-weight: 800;
+    color: #06283D;
+    margin-top: 30px;
+    margin-left: -16px;
+    position: relative;
+}
+
+/* Units (°Celsius or Fahrenheit) styling */
+.Wather-Box .Temperature span {
+    font-size: 1.5rem;
+    position: absolute;
+    left: 4px;
+}
+
+/* Weather description text */
+.Wather-Box .Description {
+    font-size: 22px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #06283D;
+}
+
+/* Weather information (humidity, wind) */
+.Weather-Information {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/*  styling for both humidity and wind */
+.humidity, .Wind {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+}
+
+/* Humidity section */
+.humidity {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+/* Wind section */
+.Wind {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+/* Icon styling for both humidity and wind */
+.humidity i, .Wind i {
+    font-size: 26px;
+    color: #06283D;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+
+/* Numeric values for humidity and wind */
+.humidity span, .Wind span {
+    font-size: 22px;
+    font-weight: 500;
+    color: #06283D;
+}
+
+/* Labels for humidity and wind */
+.humidity p, .Wind p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #06283D;
+}
+
+/* Animation for fading in elements */
+.fadeIn {
+    animation: fadeIn 0.5s forwards;
+    animation-delay: 0.5s;
+}
+
+/* Keyframes for fadeIn effect */
+@keyframes fadeIn {
+    to {
+        transform: scale(1); /* Rescale to normal */
+        opacity: 1; /* Make visible */
+    }
+}

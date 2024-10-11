@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href = "style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <!--Container for classes in general-->
+    <div class="Container">
+        <!--Search Box Location Container-->
+        <div class="Search-Box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text"placeholder = "Enter your location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+        <!------------------------------->
+
+
+        <!-- Invalid location container-->
+        <div class="Item-Not-Found">
+            <img src = "/Images/search_magnifying_glass.png"> <!--Put img here-->
+            <p> Sorry! Invalid Location</p>
+        </div>
+        <!---------------------->
+
+        <!--Weather Box container --------->
+        <div class="Wather-Box">
+            <img src = ""> 
+            <p class="Temperature"></p>
+            <p class = "Description"></p>
+        </div>
+
+        <!--Weather Information container-->
+        <div class="Weather-Information">
+            <!--Humiditay-->
+            <div class="humidity">
+                <i class="fa-solid fa-bars"></i>
+                <div class="text-here">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            <!--Wind-->
+                <div class="Wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text-here">
+                        <span></span>
+                        <p>Wind speed</p>
+                    </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
